@@ -11,6 +11,10 @@
 		2A19FCB328FAFF3B00431A44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19FCB228FAFF3B00431A44 /* ContentView.swift */; };
 		2A19FCB528FAFF3B00431A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A19FCB428FAFF3B00431A44 /* Assets.xcassets */; };
 		2A19FCB828FAFF3B00431A44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A19FCB728FAFF3B00431A44 /* Preview Assets.xcassets */; };
+		2A19FCBF28FAFF6A00431A44 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19FCBE28FAFF6A00431A44 /* MapView.swift */; };
+		2A19FCC128FAFFED00431A44 /* UserLocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19FCC028FAFFED00431A44 /* UserLocationMapView.swift */; };
+		2A19FCC328FB019200431A44 /* MarkerMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19FCC228FB019200431A44 /* MarkerMapView.swift */; };
+		2A19FCC528FB058100431A44 /* SampleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19FCC428FB058100431A44 /* SampleMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		2A19FCB228FAFF3B00431A44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A19FCB428FAFF3B00431A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A19FCB728FAFF3B00431A44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A19FCBE28FAFF6A00431A44 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2A19FCC028FAFFED00431A44 /* UserLocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationMapView.swift; sourceTree = "<group>"; };
+		2A19FCC228FB019200431A44 /* MarkerMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerMapView.swift; sourceTree = "<group>"; };
+		2A19FCC428FB058100431A44 /* SampleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				2A19FCB028FAFF3B00431A44 /* MapApp.swift */,
 				2A19FCB228FAFF3B00431A44 /* ContentView.swift */,
+				2A19FCC428FB058100431A44 /* SampleMapView.swift */,
+				2A19FCBE28FAFF6A00431A44 /* MapView.swift */,
+				2A19FCC028FAFFED00431A44 /* UserLocationMapView.swift */,
+				2A19FCC228FB019200431A44 /* MarkerMapView.swift */,
 				2A19FCB428FAFF3B00431A44 /* Assets.xcassets */,
 				2A19FCB628FAFF3B00431A44 /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A19FCB328FAFF3B00431A44 /* ContentView.swift in Sources */,
+				2A19FCC328FB019200431A44 /* MarkerMapView.swift in Sources */,
+				2A19FCC128FAFFED00431A44 /* UserLocationMapView.swift in Sources */,
+				2A19FCBF28FAFF6A00431A44 /* MapView.swift in Sources */,
 				2A19FCB128FAFF3B00431A44 /* MapApp.swift in Sources */,
+				2A19FCC528FB058100431A44 /* SampleMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +286,13 @@
 				DEVELOPMENT_TEAM = NS2U56N5HL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報は、地図上での位置の表示に使用されます。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +317,13 @@
 				DEVELOPMENT_TEAM = NS2U56N5HL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報は、地図上での位置の表示に使用されます。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

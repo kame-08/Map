@@ -2,7 +2,7 @@
 //  MapApp.swift
 //  Map
 //
-//  Created by Ryo on 2022/10/15.
+//  Created by Ryo on 2022/10/16.
 //
 
 import SwiftUI
