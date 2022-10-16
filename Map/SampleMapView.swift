@@ -19,16 +19,13 @@ struct SampleMapView: View {
             Map(coordinateRegion: $region,
                 //現在地の表示
                 showsUserLocation: true,
-                //現在地の追尾
+                //現在地の追従
                 userTrackingMode: $userTrackingMode,
                 //マーカの指定
                 annotationItems: place)
             { place in
                 MapMarker(coordinate: place.location,
                           tint: Color.orange)
-            }
-            .onTapGesture {
-                userTrackingMode = .none
             }
             
             if userTrackingMode == .none {

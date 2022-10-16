@@ -18,7 +18,7 @@ struct UserLocationMapView: View {
             interactionModes: .zoom,
             //現在地の表示
             showsUserLocation: true,
-            //現在地の追尾
+            //現在地の追従
             userTrackingMode: .constant(MapUserTrackingMode.follow)
         )
         .task(){
