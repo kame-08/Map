@@ -25,7 +25,7 @@ struct MapView: View {
             //Mapの操作の指定
             interactionModes: .pan,
             //現在地の表示
-            showsUserLocation: true
+            showsUserLocation: false
         )
     }
 }

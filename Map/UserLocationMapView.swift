@@ -22,6 +22,7 @@ struct UserLocationMapView: View {
             userTrackingMode: .constant(MapUserTrackingMode.follow)
         )
         .task(){
+            //位置情報へのアクセスを要求
             let manager = CLLocationManager()
             manager.requestWhenInUseAuthorization()
         }

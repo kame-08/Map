@@ -54,6 +54,7 @@ struct SampleMapView: View {
             }
         }
         .task(){
+            //位置情報へのアクセスを要求
             let manager = CLLocationManager()
             manager.requestWhenInUseAuthorization()
             userTrackingMode = .follow
